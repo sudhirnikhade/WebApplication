@@ -20,7 +20,7 @@ stages{
    stage ('Deploy') {
      steps {
        archive 'webapp/target/*.jar
-       bat ''' copy webapp//target//*war G:\\DEVOPS_FOLDER\\DevOps-data\\Week5\\apache-tomcat-8.5.16\\webapps\\'''
+       bat ''' copy webapp//target//*.war G:\\DEVOPS_FOLDER\\DevOps-data\\Week5\\apache-tomcat-8.5.16\\webapps\\'''
 }
 
 }
