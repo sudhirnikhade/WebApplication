@@ -5,7 +5,7 @@ stages{
      steps {
       echo "Hi, This is compile step"
      withMaven(maven : 'M3'){
-     sh 'mvn clean compile'
+     bat 'mvn clean compile'
      }
      }
   }
@@ -13,7 +13,7 @@ stages{
      steps {
        echo "Hi, This is package step"
      withMaven(maven : 'M3'){
-          sh 'mvn clean install'
+          bat 'mvn clean install'
      }
      }
   }
